@@ -8,7 +8,7 @@ setInterval(() => {
     const hour = time.getHours();
     const minute = time.getMinutes();
     const second = time.getSeconds();
-    document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second;
+    document.getElementById("time").textContent = ("0" + hour).substr(-2) + ":" + ("0" + minute).substr(-2) + ":" + ("0" + second).substr(-2);
 
     // DAY - MONTH (MM/YYYY)
     const day = time.getDate();
